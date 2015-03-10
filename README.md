@@ -6,6 +6,10 @@
 
 ![Screenshot](http://pic.yupoo.com/bitex/EuxFEQ9P/pT2wn.png)
 
+##已知bugs
+
+ - 中文设备名会显示为问号
+
 ##致谢
 
 The icon of this application was adapted from **icons4android.com**'s [Sound and Audio icon pack](https://www.iconfinder.com/icons/208039/audio_headphones_sound_icon) under [Creative Commons (Attribution 3.0 Unported)](http://creativecommons.org/licenses/by/3.0/).
