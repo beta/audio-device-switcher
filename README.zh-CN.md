@@ -6,10 +6,6 @@
 
 ![Screenshot](http://pic.yupoo.com/bitex/EuxFEQ9P/pT2wn.png)
 
-##已知bugs
-
- - 中文设备名会显示为问号
-
 ##下载
 
 请至[Releases](https://github.com/7bitex/Audio-Device-Switcher/releases)页面获取最新的release。
@@ -19,6 +15,7 @@
 **1.1** - 2015.3.11
 
  - + 添加了本地化支持
+ - * 修复了中文设备名无法显示的bug
  - * 界面的细微调整
 
 完整的更新记录请参阅[这里](https://github.com/7bitex/Audio-Device-Switcher/blob/master/VERSIONS.zh-CN.md)。

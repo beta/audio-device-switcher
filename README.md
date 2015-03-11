@@ -8,10 +8,6 @@ A tool for switching the default audio playback device.
 
 ![Screenshot](http://pic.yupoo.com/bitex/EuxFEQ9P/pT2wn.png)
 
-##Bugs
-
- - Question marks (`?`) will be displayed if the device name is in Chinese.
-
 ##Download
 
 Please refer to [Releases](https://github.com/7bitex/Audio-Device-Switcher/releases) page for the latest release.
@@ -21,6 +17,7 @@ Please refer to [Releases](https://github.com/7bitex/Audio-Device-Switcher/relea
 **1.1** - Mar 11, 2015
 
  - + Added localization support.
+ - * Fixed bug that Chinese device names cannot be displayed.
  - * Minor changes to UI.
 
 Please refer to [VERSIONS.md](https://github.com/7bitex/Audio-Device-Switcher/blob/master/VERSIONS.md) for the complete update history.
