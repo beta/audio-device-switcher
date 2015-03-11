@@ -10,15 +10,13 @@ A tool for switching the default audio playback device.
 
 ##Download
 
-Please refer to [Releases](https://github.com/7bitex/Audio-Device-Switcher/releases) page for the latest release.
+Please refer to [Releases](https://github.com/7bitex/Audio-Device-Switcher/releases) page for the latest release. Choose the right version (x86 or x64) according to your system's type.
 
 ##Update history
 
-**1.1** - Mar 11, 2015
+**1.1.3** - Mar 11, 2015
 
- - + Added localization support.
- - * Fixed bug that Chinese device names cannot be displayed.
- - * Minor changes to UI.
+ - [*] Fixed the compatibility on x86 and x64 platforms.
 
 Please refer to [VERSIONS.md](https://github.com/7bitex/Audio-Device-Switcher/blob/master/VERSIONS.md) for the complete update history.
 

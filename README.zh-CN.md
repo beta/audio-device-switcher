@@ -8,15 +8,13 @@
 
 ##下载
 
-请至[Releases](https://github.com/7bitex/Audio-Device-Switcher/releases)页面获取最新的release。
+请至[Releases](https://github.com/7bitex/Audio-Device-Switcher/releases)页面获取最新的release。根据系统类型的不同，请选择正确的版本（x86或x64）。
 
 ##更新记录
 
-**1.1** - 2015.3.11
+**1.1.3** - 2015.3.11
 
- - + 添加了本地化支持
- - * 修复了中文设备名无法显示的bug
- - * 界面的细微调整
+ - [*] 修复了x86和x64设备的兼容性问题
 
 完整的更新记录请参阅[这里](https://github.com/7bitex/Audio-Device-Switcher/blob/master/VERSIONS.zh-CN.md)。
 
