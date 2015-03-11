@@ -30,4 +30,4 @@ And great thanks to **SpikeX** for his [great article](http://www.spikex.net/pro
 
 ##开放源代码许可协议
 
-遵循[GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)协议，请参阅[LICENSE](https://github.com/7bitex/Audio-Device-Switcher/blob/master/LICENSE).
+遵循[GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)协议，请参阅[LICENSE](https://github.com/7bitex/Audio-Device-Switcher/blob/master/LICENSE)。
