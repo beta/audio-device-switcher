@@ -16,6 +16,8 @@ namespace Audio_Device_Switcher.Widget {
             void OnClick(int id);
         }
 
+        bool mouseHover = false;
+
         Font NameFont = new Font("Microsoft YaHei", 9);
         Font DefaultNameFont = new Font("Microsoft YaHei", 9, FontStyle.Bold);
 
@@ -116,19 +118,34 @@ namespace Audio_Device_Switcher.Widget {
         }
         #endregion
 
-        private void ListItem_MouseLeave(object sender, EventArgs e) {
-            if (this.GetChildAtPoint(this.PointToClient(MousePosition)) == null) {
-                this.BackColor = NormalBackgroundColor;
+        #region 鼠标事件
+        private void ListItem_MouseClick(object sender, MouseEventArgs e) {
+            if (this.onClickListener != null) {
+                this.onClickListener.OnClick(this.id);
             }
         }
 
         private void ListItem_MouseEnter(object sender, EventArgs e) {
+            this.mouseHover = true;
             this.BackColor = HoverBackgroundColor;
         }
 
-        private void ListItem_MouseClick(object sender, MouseEventArgs e) {
-            if (this.onClickListener != null) {
-                this.onClickListener.OnClick(this.id);
+        private void ListItem_MouseHover(object sender, EventArgs e) {
+            this.mouseHover = true;
+            this.BackColor = HoverBackgroundColor;
+        }
+
+        private void ListItem_MouseLeave(object sender, EventArgs e) {
+            if (this.GetChildAtPoint(this.PointToClient(MousePosition)) == null) {
+                this.mouseHover = false;
+                this.BackColor = NormalBackgroundColor;
+            }
+        }
+        #endregion
+
+        private void ListItem_Paint(object sender, PaintEventArgs e) {
+            if (mouseHover) {
+                ControlPaint.DrawBorder(e.Graphics, this.ClientRectangle, this.HoverBorderColor, ButtonBorderStyle.Solid);
             }
         }
     }

@@ -86,7 +86,7 @@ namespace Audio_Device_Switcher {
         #region UI
         /* 刷新音频设备列表 */
         private void RefreshAudioDeviceList() {
-            GetAudioDevices();
+            this.GetAudioDevices();
 
             this.panelList.Controls.Clear();
 
@@ -98,9 +98,18 @@ namespace Audio_Device_Switcher {
                     this.lblCurrentDevice.Text = device.GetName();
                 }
                 item.SetOnClickListener(onListItemClickListener);
-                item.Width = this.panelList.ClientRectangle.Width;
-                item.Top = item.Height * i;
                 this.panelList.Controls.Add(item);
+            }
+
+            this.RearrangeListItem();
+        }
+
+        /* 重新调整列表项的大小和位置 */
+        private void RearrangeListItem() {
+            for (int i = 0; i < this.panelList.Controls.Count; i++) {
+                ListItem item = (ListItem)this.panelList.Controls[i];
+                item.Width = this.panelList.ClientRectangle.Width;
+                item.Top = 10 + item.Height * i;
             }
         }
         #endregion
@@ -111,12 +120,13 @@ namespace Audio_Device_Switcher {
             this.onListItemClickListener = new OnListItemClickListener(this);
         }
 
+        #region 窗体事件处理方法
         private void frmPanel_Load(object sender, EventArgs e) {
             this.Hide();
         }
 
         private void frmPanel_Shown(object sender, EventArgs e) {
-            RefreshAudioDeviceList();
+            this.RefreshAudioDeviceList();
         }
 
         private void frmPanel_Deactivate(object sender, EventArgs e) {
@@ -128,6 +138,7 @@ namespace Audio_Device_Switcher {
                 this.Hide();
             }
         }
+        #endregion
 
         private void notifyIcon_MouseClick(object sender, MouseEventArgs e) {
             if (e.Button == System.Windows.Forms.MouseButtons.Left) {
@@ -148,11 +159,7 @@ namespace Audio_Device_Switcher {
 
         private void panelList_SizeChanged(object sender, EventArgs e) {
             // 列表Panel大小变化时，调整每个列表项的大小和位置
-            for (int i = 0; i < this.panelList.Controls.Count; i++) {
-                ListItem item = (ListItem)this.panelList.Controls[i];
-                item.Width = this.panelList.ClientRectangle.Width;
-                item.Top = item.Height * i;
-            }
+            this.RearrangeListItem();
         }
 
         private void linkAudioDevice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
@@ -170,6 +177,5 @@ namespace Audio_Device_Switcher {
             this.Hide();
         }
         #endregion
-
     }
 }

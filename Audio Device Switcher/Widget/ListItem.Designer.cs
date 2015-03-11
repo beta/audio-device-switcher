@@ -35,10 +35,11 @@
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(208)))));
             this.lblName.Location = new System.Drawing.Point(16, 8);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(251, 20);
+            this.lblName.Size = new System.Drawing.Size(253, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Realtek Digital Output";
             this.lblName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ListItem_MouseClick);
+            this.lblName.MouseHover += new System.EventHandler(this.ListItem_MouseHover);
             // 
             // lblDescription
             // 
@@ -49,6 +50,7 @@
             this.lblDescription.TabIndex = 1;
             this.lblDescription.Text = "Realtek High Definition Audio";
             this.lblDescription.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ListItem_MouseClick);
+            this.lblDescription.MouseHover += new System.EventHandler(this.ListItem_MouseHover);
             // 
             // ListItem
             // 
@@ -62,9 +64,11 @@
             this.MinimumSize = new System.Drawing.Size(0, 52);
             this.Name = "ListItem";
             this.Size = new System.Drawing.Size(283, 52);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.ListItem_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ListItem_MouseClick);
             this.MouseEnter += new System.EventHandler(this.ListItem_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.ListItem_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.ListItem_MouseHover);
             this.ResumeLayout(false);
 
         }
