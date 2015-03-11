@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Audio_Device_Switcher.Data;
+using Audio_Device_Switcher.Resources;
 using Audio_Device_Switcher.Widget;
 
-namespace Audio_Device_Switcher {
+namespace Audio_Device_Switcher.Forms {
     public partial class frmPanel : Form {
 
         /* 列表项单击事件的listener */
@@ -122,6 +123,12 @@ namespace Audio_Device_Switcher {
 
         #region 窗体事件处理方法
         private void frmPanel_Load(object sender, EventArgs e) {
+            this.aboutMenuItem.Text = Strings.aboutMenuItem;
+            this.audioDeviceMenuItem.Text = Strings.audioDeviceMenuItem;
+            this.exitMenuItem.Text = Strings.exitMenuItem;
+            this.labelCurrentDefault.Text = Strings.labelCurrentDefault;
+            this.linkAudioDevice.Text = Strings.linkAudioDevice;
+
             this.Hide();
         }
 
@@ -162,20 +169,29 @@ namespace Audio_Device_Switcher {
             this.RearrangeListItem();
         }
 
+        private void panelBottom_SizeChanged(object sender, EventArgs e) {
+            this.linkAudioDevice.Left = (this.panelBottom.ClientRectangle.Width - this.linkAudioDevice.Width) / 2;
+        }
+
         private void linkAudioDevice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             Process.Start("mmsys.cpl");
             this.Hide();
         }
 
         #region 菜单项
-        private void exitMenuItem_Click(object sender, EventArgs e) {
-            this.Close();
-        }
-
         private void audioDeviceMenuItem_Click(object sender, EventArgs e) {
             Process.Start("mmsys.cpl");
             this.Hide();
         }
+
+        private void aboutMenuItem_Click(object sender, EventArgs e) {
+            Process.Start("https://github.com/7bitex/Audio-Device-Switcher");
+        }
+
+        private void exitMenuItem_Click(object sender, EventArgs e) {
+            this.Close();
+        }
         #endregion
+
     }
 }

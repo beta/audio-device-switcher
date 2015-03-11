@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Audio_Device_Switcher.Forms;
+
 namespace Audio_Device_Switcher {
     static class Program {
         /// <summary>
