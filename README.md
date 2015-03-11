@@ -6,7 +6,7 @@ A tool for switching the default audio playback device.
 
 ##Screenshot
 
-![Screenshot](http://pic.yupoo.com/bitex/EuxFEQ9P/pT2wn.png)
+![Screenshot](http://pic.yupoo.com/bitex/EuFb3rH7/11y2VS.png)
 
 ##Download
 
