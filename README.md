@@ -10,7 +10,7 @@ A tool for switching the default audio playback device.
 
 ##Download
 
-Please refer to [Releases](https://github.com/7bitex/Audio-Device-Switcher/releases) page for the latest release. Choose the right version (x86 or x64) according to your system's type.
+Please refer to [this page](https://github.com/7bitex/Audio-Device-Switcher/releases/latest) page for the latest release. Choose the right version (x86 or x64) according to your system's type.
 
 If this application fails to run, you may need to install [Microsoft .NET Framework 4.5](http://www.microsoft.com/en-US/download/details.aspx?id=30653) and [Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/en-us/download/details.aspx?id=40784). Remember to choose the right version that matches your system.
 

@@ -8,7 +8,7 @@
 
 ##下载
 
-请至[Releases](https://github.com/7bitex/Audio-Device-Switcher/releases)页面获取最新的release。根据系统类型的不同，请选择正确的版本（x86或x64）。
+请至[这个页面](https://github.com/7bitex/Audio-Device-Switcher/releases/latest)获取最新的release。根据系统类型的不同，请选择正确的版本（x86或x64）。
 
 如果程序无法运行，可能需要安装[Microsoft .NET Framework 4.5](http://www.microsoft.com/zh-CN/download/details.aspx?id=30653)以及[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/zh-CN/download/details.aspx?id=40784)。请根据系统选择正确的版本。
 
