@@ -4,6 +4,10 @@
 
 A tool for switching the default audio playback device.
 
+This project will no longer be maintained, as Windows 10 version 1607 comes with a switcher in the volume panel. See the image below.
+
+![](https://cloud.githubusercontent.com/assets/5000910/17600114/aaf0a70e-6034-11e6-9898-a4e17d49ea1a.png)
+
 ##Screenshot
 
 ![Screenshot](http://pic.yupoo.com/bitex/EuFb3rH7/11y2VS.png)
