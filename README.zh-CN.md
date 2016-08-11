@@ -2,6 +2,10 @@
 
 一个用于快速切换默认音频设备的小工具。
 
+由于 Windows 10 1607 版本在音量面板里自带了选择播放设备的开关（见下图），因此这个项目将不再更新。
+
+![](https://cloud.githubusercontent.com/assets/5000910/17600114/aaf0a70e-6034-11e6-9898-a4e17d49ea1a.png)
+
 ##截图
 
 ![Screenshot](http://pic.yupoo.com/bitex/EuFb3rH7/11y2VS.png)
